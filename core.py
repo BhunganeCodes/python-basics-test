@@ -30,8 +30,14 @@ def print_odds_down(n):
 
 
 def rate_username(username):
-    pass
-
+    if not username:
+        return "Invalid"
+    elif username.isalpha():
+        return "Poor"
+    elif username.isalnum():
+        return "Good"
+    else:
+        return "Excellent"
 
 def mirror_sentence(sentence):
     sentence = sentence.strip().split()
