@@ -34,4 +34,7 @@ def rate_username(username):
 
 
 def mirror_sentence(sentence):
-    pass
+    sentence = sentence.strip().split()
+    return " ".join(sentence[::-1])
+
+
