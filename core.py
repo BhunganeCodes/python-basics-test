@@ -1,7 +1,9 @@
 
 
 def repeat_message(msg, n):
-    pass
+    
+    for i in range(n):
+        print(msg)
     
 
 def is_triangle_number(n):
