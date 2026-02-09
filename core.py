@@ -18,7 +18,15 @@ def is_triangle_number(n):
         return False
 
 def print_odds_down(n):
-    pass
+    
+    for i in range(n, 0, -1):
+        if n <= 0:
+            break
+        if n % 2 == 0:
+            continue
+        else:
+            print(n)
+            n -= 2
 
 
 def rate_username(username):
